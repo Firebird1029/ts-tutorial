@@ -1,11 +1,11 @@
 interface Person {
-	firstName: String;
-	lastName: String;
+	firstName: string;
+	lastName: string;
 }
 
 class Student {
-	fullName: String;
-	constructor(public firstName: String, public middleInitial: String, public lastName: String) {
+	fullName: string;
+	constructor(public firstName: string, public middleInitial: string, public lastName: string) {
 		this.fullName = firstName + " " + middleInitial + " " + lastName;
 	}
 }
