@@ -134,3 +134,14 @@ const Clock2: ClockConstructor = class Clock implements ClockInterface {
 		this.currentTime = d;
 	}
 };
+
+function buildName(firstName: string, lastName?: string, middleName = "Q.") {
+	if (lastName) return firstName + " " + middleName + " " + lastName;
+	return firstName;
+}
+
+function buildName2(firstName: string, ...restOfName: string[]) {
+	return firstName + " " + restOfName.join(" ");
+}
+
+let employeeName = buildName2("Joseph", "Sam", "Lucas", "McKinzie");
